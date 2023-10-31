@@ -1,0 +1,30 @@
+cmake_minimum_required(VERSION 3.13)
+project(RDT)
+
+
+
+SET(CMAKE_C_COMPILER "C:/Program Files (x86)/mingw64/bin/gcc.exe")
+SET(CMAKE_CXX_COMPILER "C:/Program Files (x86)/mingw64/bin/g++.exe")
+add_definitions(-std=c++11)
+INCLUDE_DIRECTORIES(${PROJECT_SOURCE_DIR}/include)
+
+aux_source_directory(${PROJECT_SOURCE_DIR}/stop_wait_src STOP_WAIT_SRC_LIST)
+aux_source_directory(${PROJECT_SOURCE_DIR}/GBN_src GBN_SRC_LIST)
+aux_source_directory(${PROJECT_SOURCE_DIR}/SR_src SR_SRC_LIST)
+aux_source_directory(${PROJECT_SOURCE_DIR}/TCP_src TCP_SRC_LIST)
+
+SET(EXECUTABLE_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/bin)
+
+ADD_EXECUTABLE(stop_wait ${STOP_WAIT_SRC_LIST})
+ADD_EXECUTABLE(GBN  ${GBN_SRC_LIST})
+ADD_EXECUTABLE(SR  ${SR_SRC_LIST})
+ADD_EXECUTABLE(TCP  ${TCP_SRC_LIST})
+
+
+
+FIND_LIBRARY(NETSIM_LIB libnetsim.a ${PROJECT_SOURCE_DIR}/lib)
+
+TARGET_LINK_LIBRARIES(stop_wait  ${NETSIM_LIB})
+TARGET_LINK_LIBRARIES(GBN  ${NETSIM_LIB})
+TARGET_LINK_LIBRARIES(SR  ${NETSIM_LIB})
+TARGET_LINK_LIBRARIES(TCP  ${NETSIM_LIB})

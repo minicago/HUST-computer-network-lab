@@ -1,0 +1,1 @@
+"C:/Program Files (x86)/mingw64/bin/g++.exe" -Wl,--enable-auto-import CMakeFiles/SR.dir/SR_src/main.cpp.o CMakeFiles/SR.dir/SR_src/receiver.cpp.o CMakeFiles/SR.dir/SR_src/sender.cpp.o -o bin/SR.exe -Wl,--out-implib,bin/libSR.dll.a -Wl,--major-image-version,0,--minor-image-version,0  lib/libnetsim.a 

@@ -1,0 +1,6 @@
+/c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/CMakeFiles/stop_wait.dir
+/c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/CMakeFiles/GBN.dir
+/c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/CMakeFiles/SR.dir
+/c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/CMakeFiles/TCP.dir
+/c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/CMakeFiles/edit_cache.dir
+/c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/CMakeFiles/rebuild_cache.dir

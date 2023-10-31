@@ -1,0 +1,1 @@
+"C:/Program Files (x86)/mingw64/bin/g++.exe" -Wl,--enable-auto-import CMakeFiles/GBN.dir/GBN_src/main.cpp.o CMakeFiles/GBN.dir/GBN_src/receiver.cpp.o CMakeFiles/GBN.dir/GBN_src/sender.cpp.o -o bin/GBN.exe -Wl,--out-implib,bin/libGBN.dll.a -Wl,--major-image-version,0,--minor-image-version,0  lib/libnetsim.a 

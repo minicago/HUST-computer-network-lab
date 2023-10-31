@@ -1,0 +1,1 @@
+"C:/Program Files (x86)/mingw64/bin/g++.exe" -Wl,--enable-auto-import CMakeFiles/stop_wait.dir/stop_wait_src/main.cpp.o CMakeFiles/stop_wait.dir/stop_wait_src/receiver.cpp.o CMakeFiles/stop_wait.dir/stop_wait_src/sender.cpp.o -o bin/stop_wait.exe -Wl,--out-implib,bin/libstop_wait.dll.a -Wl,--major-image-version,0,--minor-image-version,0  lib/libnetsim.a 

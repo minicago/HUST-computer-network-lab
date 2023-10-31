@@ -4,4 +4,4 @@
 
 SET(CMAKE_C_COMPTLER GCC)
 
-copilot : first_connect = true
+copilot : first_connect = false

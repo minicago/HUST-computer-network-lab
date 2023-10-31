@@ -42,6 +42,7 @@ void SRRdtReceiver::receive(const Packet &packet) {
 			pns->delivertoAppLayer(RECEIVER, *numToMessage[expectSequenceNumberRcvd]);
 			numToMessage.erase(expectSequenceNumberRcvd);
 			expectSequenceNumberRcvd ++;
+			printf("接收方窗口移动\n");
 		}
 		
 	}

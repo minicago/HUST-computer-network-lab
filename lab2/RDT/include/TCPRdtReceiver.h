@@ -1,9 +1,11 @@
 #ifndef TCP_RDT_RECEIVER_H
 #define TCP_RDT_RECEIVER_H
+#include<map>
 #include "RdtReceiver.h"
 class TCPRdtReceiver :public RdtReceiver
 {
 private:
+	map<int,Message*> numToMessage;
 	int expectSequenceNumberRcvd;	// 期待收到的下一个报文序号
 	Packet lastAckPkt;				//上次发送的确认报文
 

@@ -27,6 +27,7 @@ bool GBNRdtSender::send(const Message &message) {
 	packet->checksum = pUtils->calculateCheckSum(*packet);
 	pUtils->printPacket("发送方发送报文", *packet);
 	if(packetWin.empty()) pns->startTimer(SENDER, Configuration::TIME_OUT,packet->seqnum);			//启动发送方定时器
+	pUtils->printPacket("Win push", *packet);
 	packetWin.push(packet);
 	pns->sendToNetworkLayer(RECEIVER, *packet);								//调用模拟网络环境的sendToNetworkLayer，通过网络层发送到对方																					//进入等待状态
 	return true;
@@ -41,6 +42,7 @@ void GBNRdtSender::receive(const Packet &ackPkt) {
 		if (checkSum == ackPkt.checksum && ackPkt.acknum >= packetWin.front()->seqnum) {
 			pns->stopTimer(SENDER, packetWin.front()->seqnum);//关闭定时器
 			while (!packetWin.empty() && ackPkt.acknum >= packetWin.front()->seqnum){
+				pUtils->printPacket("Win pop", *packetWin.front());
 				delete packetWin.front();
 				packetWin.pop();
 			}

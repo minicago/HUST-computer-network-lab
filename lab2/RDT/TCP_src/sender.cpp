@@ -1,9 +1,8 @@
-
 #include "Global.h"
 #include "TCPRdtSender.h"
 
 
-TCPRdtSender::TCPRdtSender():expectSequenceNumberSend(1),winSize(4),nackCount(0)
+TCPRdtSender::TCPRdtSender():expectSequenceNumberSend(1),winSize(8),nackCount(0)
 {
 }
 
@@ -27,6 +26,7 @@ bool TCPRdtSender::send(const Message &message) {
 	packet->checksum = pUtils->calculateCheckSum(*packet);
 	pUtils->printPacket("发送方发送报文", *packet);
 	if(packetWin.empty()) pns->startTimer(SENDER, Configuration::TIME_OUT,packet->seqnum);			//启动发送方定时器
+	pUtils->printPacket("Win push", *packet);
 	packetWin.push(packet);
 	pns->sendToNetworkLayer(RECEIVER, *packet);								//调用模拟网络环境的sendToNetworkLayer，通过网络层发送到对方																					//进入等待状态
 	return true;
@@ -42,6 +42,7 @@ void TCPRdtSender::receive(const Packet &ackPkt) {
 			nackCount = 0;
 			pns->stopTimer(SENDER, packetWin.front()->seqnum);//关闭定时器
 			while (!packetWin.empty() && ackPkt.acknum >= packetWin.front()->seqnum){
+				pUtils->printPacket("Win pop", *packetWin.front());
 				delete packetWin.front();
 				packetWin.pop();
 			}
@@ -58,6 +59,7 @@ void TCPRdtSender::receive(const Packet &ackPkt) {
 				pUtils->printPacket("发送方acknum错误", ackPkt);	
 				nackCount ++;
 				if(nackCount == 3){
+					printf("快速重传\n");
 					nackCount = 0;
 					pUtils->printPacket("发送方发送报文", *packetWin.front());
 					pns->stopTimer(SENDER, packetWin.front()->seqnum);

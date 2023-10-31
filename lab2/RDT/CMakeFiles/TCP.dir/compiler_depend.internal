@@ -161,6 +161,16 @@ CMakeFiles/TCP.dir/TCP_src/main.cpp.o
  /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_queue.h
  /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h
  /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Users/byy/Desktop/���������ʵ��/mylab/lab2/RDT/include/TCPRdtReceiver.h
+ /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/map
+ /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_tree.h
+ /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/aligned_buffer.h
+ /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_map.h
+ /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tuple
+ /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/utility
+ /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_relops.h
+ /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/array
+ /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h
+ /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_multimap.h
 
 CMakeFiles/TCP.dir/TCP_src/receiver.cpp.o
  /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/TCP_src/receiver.cpp
@@ -306,6 +316,17 @@ CMakeFiles/TCP.dir/TCP_src/receiver.cpp.o
  /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Program Files (x86)/mingw64/x86_64-w64-mingw32/include/string.h
  /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Program Files (x86)/mingw64/x86_64-w64-mingw32/include/sec_api/string_s.h
  /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Users/byy/Desktop/���������ʵ��/mylab/lab2/RDT/include/TCPRdtReceiver.h
+ /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/map
+ /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_tree.h
+ /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/ext/aligned_buffer.h
+ /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_map.h
+ /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/tuple
+ /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/utility
+ /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_relops.h
+ /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/array
+ /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/uses_allocator.h
+ /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/invoke.h
+ /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/C:/Program Files (x86)/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/bits/stl_multimap.h
 
 CMakeFiles/TCP.dir/TCP_src/sender.cpp.o
  /c/Users/byy/Desktop/计算机网络实验/mylab/lab2/RDT/TCP_src/sender.cpp

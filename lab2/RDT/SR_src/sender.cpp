@@ -29,6 +29,7 @@ bool SRRdtSender::send(const Message &message) {
 	pns->startTimer(SENDER, Configuration::TIME_OUT,packet->seqnum);			//启动发送方定时器
 	packetAccepted[packet->seqnum] = false;
 	numToPacket[packet->seqnum] = packet;
+	pUtils->printPacket("Win push", *packet);
 	packetWin.push(packet);
 	pns->sendToNetworkLayer(RECEIVER, *packet);								//调用模拟网络环境的sendToNetworkLayer，通过网络层发送到对方																					//进入等待状态
 	return true;
@@ -44,6 +45,7 @@ void SRRdtSender::receive(const Packet &ackPkt) {
 			packetAccepted[ackPkt.acknum] = true;
 			pns->stopTimer(SENDER, ackPkt.acknum);//关闭定时器
 			while (!packetWin.empty() && packetAccepted[packetWin.front()->seqnum] ){
+				pUtils->printPacket("Win pop", *packetWin.front());
 				numToPacket.erase(packetWin.front()->acknum);
 				packetAccepted.erase(packetWin.front()->acknum);
 				delete packetWin.front();

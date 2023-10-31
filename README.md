@@ -2,6 +2,6 @@
 
 今日笑话：
 
-COMPTLE GCC
+SET(CMAKE_C_COMPTLER GCC)
 
 copilot : first_connect = true
